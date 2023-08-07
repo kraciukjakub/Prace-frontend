@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Slider</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="slider">
+      <section class="slider_container">
+        <button
+          class="slider_button slider_button--prev"
+          data-button-prev
+        ></button>
+        <figure class="slide" data-slide></figure>
+        <button
+          class="slider_button slider_button--next"
+          data-button-next
+        ></button>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script>
+      const imageArr = [
+        "./images/1.jpg",
+        "./images/2.jpg",
+        "./images/3.jpg",
+        "./images/4.jpg",
+        "./images/5.png",
+      ];
+
+      const slider = new Slider(imageArr);
+      slider.initializeSlider();
+    </script>
+  </body>
+</html>
